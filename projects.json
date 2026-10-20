@@ -54,6 +54,72 @@
       ]
     },
     {
+      "id": "shelf",
+      "title": "Custom built loft-shelf",
+      "group": "supporting",
+      "summary": "A custom-built loft-shelf designed and hand-built for personal use.",
+      "role": "Project manager; led design and construction",
+      "status": "Ongoing",
+      "dates": "October 2026 – present",
+      "tools": "SolidWorks CAD, ANSYS FEA, hand fabrication in wood, 3D printing",
+      "diagram": "assets/diagrams/irrigation.svg",
+      "diagram_label": "Illustrative diagram, not the built device",
+      "images": ["shelf-ss.png", "shelf-file.png", "shelf-file2.png", "vid.mp4"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Design, plan, and build a portable irrigation device powered by gravity."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I managed the project and allocated roles, led the design of the gearbox and primary mechanism, ran SolidWorks simulation, and hand-built the device from wood."
+          ]
+        },
+        {
+          "heading": "Limitations and lessons",
+          "body": [
+            "This was a class prototype, not a commercial product, and I would not call it a practical irrigation solution. What I took from it was the full cycle: planning a team build, designing a mechanism, and seeing where an idea breaks down once it is made by hand."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hand",
+      "title": "RL-Trained Robotic Hand",
+      "group": "supporting",
+      "summary": "Trained a reinforcement learning model policy to control a robotic hand in Isaac Sim.",
+      "role": "Project Manager",
+      "status": "Past project",
+      "dates": "May – July 2026",
+      "tools": "Python, Isaac Sim, modern reinforcement learning",
+      "diagram": "assets/diagrams/irrigation.svg",
+      "diagram_label": "Illustrative diagram, not the built device",
+      "images": ["main_vid.mp4", "rl-video-step-7000.mp4", "main_rew_step.png", "main_pen_action.png"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Design, plan, and build a portable irrigation device powered by gravity."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I managed the project and allocated roles, led the design of the gearbox and primary mechanism, ran SolidWorks simulation, and hand-built the device from wood."
+          ]
+        },
+        {
+          "heading": "Limitations and lessons",
+          "body": [
+            "This was a class prototype, not a commercial product, and I would not call it a practical irrigation solution. What I took from it was the full cycle: planning a team build, designing a mechanism, and seeing where an idea breaks down once it is made by hand."
+          ]
+        }
+      ]
+    },
+    {
       "id": "airbrakes",
       "title": "Model rocket airbrake system",
       "group": "featured",
@@ -115,39 +181,6 @@
           "heading": "Technical reasoning",
           "body": [
             "Remote access runs through an Oracle VPS using Pangolin and Traefik, a reverse-proxy setup. Making several services reachable behind one entry point means working through routing, proxy integration, and debugging when pieces disagree. "
-          ]
-        }
-      ]
-    },
-    {
-      "id": "shelf",
-      "title": "Custom built loft-shelf",
-      "group": "supporting",
-      "summary": "A custom-built loft-shelf designed and hand-built for personal use.",
-      "role": "Project manager; led design and construction",
-      "status": "Ongoing",
-      "dates": "October 2026 – present",
-      "tools": "SolidWorks CAD, ANSYS FEA, hand fabrication in wood, 3D printing",
-      "diagram": "assets/diagrams/irrigation.svg",
-      "diagram_label": "Illustrative diagram, not the built device",
-      "images": ["shelf-ss.png", "shelf-file.png", "shelf-file2.png", "vid.mp4"],
-      "sections": [
-        {
-          "heading": "Objective",
-          "body": [
-            "Design, plan, and build a portable irrigation device powered by gravity."
-          ]
-        },
-        {
-          "heading": "My contribution",
-          "body": [
-            "I managed the project and allocated roles, led the design of the gearbox and primary mechanism, ran SolidWorks simulation, and hand-built the device from wood."
-          ]
-        },
-        {
-          "heading": "Limitations and lessons",
-          "body": [
-            "This was a class prototype, not a commercial product, and I would not call it a practical irrigation solution. What I took from it was the full cycle: planning a team build, designing a mechanism, and seeing where an idea breaks down once it is made by hand."
           ]
         }
       ]
