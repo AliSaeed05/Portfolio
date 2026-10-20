@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" aria-hidden="true" focusable="false">
+              
+              
+              <g fill="none" stroke="#111A21" stroke-width="1.5">
+                <rect x="14" y="30" width="200" height="160"/><rect x="266" y="30" width="200" height="160"/>
+                <path d="M214 110 h52"/>
+              </g>
+              <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#111A21">
+                <text x="26" y="52" font-weight="700">Debian home server</text>
+                <text x="26" y="88">Nextcloud</text><text x="26" y="110">Jellyfin</text><text x="26" y="132">Immich</text>
+                <text x="278" y="52" font-weight="700">Oracle VPS</text>
+                <text x="278" y="88">Pangolin</text><text x="278" y="110">Traefik</text>
+              </g>
+            </svg>

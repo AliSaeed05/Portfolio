@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" aria-hidden="true" focusable="false">
+              
+              
+              <g fill="none" stroke-width="2">
+                <path d="M40 240 C120 240 140 80 240 80 S380 120 440 240" stroke="#111A21" />
+                <path d="M40 240 C130 235 130 100 240 98 S370 150 440 240" stroke="#1D4ED8" stroke-dasharray="6 5" />
+              </g>
+              <g fill="#111A21"><circle cx="40" cy="240" r="4"/><circle cx="240" cy="80" r="4"/><circle cx="440" cy="240" r="4"/></g>
+              <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#111A21">
+                <text x="30" y="262">takeoff</text><text x="214" y="68">waypoint</text><text x="410" y="262">landing</text>
+                <text x="290" y="205" fill="#111A21">— planned</text>
+                <text x="290" y="222" fill="#1D4ED8">- - observed</text>
+              </g>
+            </svg>

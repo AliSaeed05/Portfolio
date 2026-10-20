@@ -1,0 +1,156 @@
+{
+  "site": {
+    "hero_alt": "Ali Saeed Chaudhary working on a project",
+    "about_alt": "Ali Saeed Chaudhary"
+  },
+  "projects": [
+    {
+      "id": "space-mining",
+      "title": "Lunar-regolith rover dust cover",
+      "group": "featured",
+      "summary": "Leading the dust-cover design for a rover’s collection subsystem, with robustness and manufacturability as the goals.",
+      "role": "Collections sub-team, Cardinal Space Mining; design lead for the dust cover",
+      "status": "In progress",
+      "dates": "Current",
+      "tools": "Team design for NASA Lunabotics",
+      "diagram": "assets/diagrams/space-mining.svg",
+      "diagram_label": "Illustrative diagram, not project hardware",
+      "images": ["space-mining-main.jpg", "space-mining-1.jpg", "space-mining-1.jpg"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Improve the robustness of the collection subsystem’s dust protection compared with the prior year’s design, while keeping the subsystem functional and manufacturable."
+          ]
+        },
+        {
+          "heading": "Why it matters",
+          "body": [
+            "> General context: lunar regolith is fine and abrasive, so a mechanism that moves material also has to keep it out of the parts that move."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I lead the design of the dust cover as part of the Collections sub-team."
+          ]
+        },
+        {
+          "heading": "Design reasoning",
+          "body": [
+            "The cover cannot be designed on its own. It sits where several requirements meet:",
+            "- **Protection and collection motion:** the cover must not impede the parts it protects.",
+            "- **Clearance:** gaps small enough to keep material out, large enough to avoid binding.",
+            "- **Attachment:** how it mounts to the subsystem.",
+            "- **Fabrication:** the team has to be able to build it."
+          ]
+        },
+        {
+          "heading": "Current stage",
+          "body": [
+            "Design work is ongoing. A final design, prototype, and dust-protection test results do not exist yet."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "airbrakes",
+      "title": "Model rocket airbrake system",
+      "group": "featured",
+      "summary": "Proposed airbrake flight-mechanics system for a model rocket.",
+      "role": "Mechanical sub-team, Cyclone Rocketry; proposed airbrake design",
+      "status": "Past project",
+      "dates": "Oct 2024 – Dec 2025",
+      "tools": "SolidWorks, Ansys (FEA)",
+      "diagram": "assets/diagrams/airbrakes.svg",
+      "diagram_label": "Illustrative diagram, not team CAD",
+      "images": ["spiralcam.jpg", "rocketassem.png"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Design an airbrake system that changes a rocket’s drag in flight, as part of designing and developing a model rocket with the Mechanical sub-team."
+          ]
+        },
+        {
+          "heading": "Why it matters",
+          "body": [
+            "> The airbrakes add drag on demand to help a rocket reach a target apogee. The system needed to be lighter and more compact than previous designs, while still being robust enough to withstand the forces without compromising control authority."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I proposed a novel airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "home-server",
+      "title": "Private home mediaserver",
+      "group": "supporting",
+      "summary": "A Debian server I built and maintain for media, files, photos, and other services I can provide to friends and family.",
+      "role": "Built and maintain the server",
+      "status": "Ongoing",
+      "dates": "June 2026 - present",
+      "tools": "Debian, Nextcloud, Jellyfin, Immich, Traefik, Pangolin",
+      "diagram": "assets/diagrams/home-server.svg",
+      "diagram_label": "Illustrative diagram, simplified",
+      "images": ["network.png"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Run my own file, media, and photo services instead of relying on third-party hosts."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I built and maintain the server, deploy the services (Nextcloud, Jellyfin, Immich), and troubleshoot problems as they come up."
+          ]
+        },
+        {
+          "heading": "Technical reasoning",
+          "body": [
+            "Remote access runs through an Oracle VPS using Pangolin and Traefik, a reverse-proxy setup. Making several services reachable behind one entry point means working through routing, proxy integration, and debugging when pieces disagree. "
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shelf",
+      "title": "Custom built loft-shelf",
+      "group": "supporting",
+      "summary": "A custom-built loft-shelf designed and hand-built for personal use.",
+      "role": "Project manager; led design and construction",
+      "status": "Ongoing",
+      "dates": "October 2026 – present",
+      "tools": "SolidWorks CAD, ANSYS FEA, hand fabrication in wood, 3D printing",
+      "diagram": "assets/diagrams/irrigation.svg",
+      "diagram_label": "Illustrative diagram, not the built device",
+      "images": ["shelf-ss.png", "shelf-file.png", "shelf-file2.png", "vid.mp4"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Design, plan, and build a portable irrigation device powered by gravity."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I managed the project and allocated roles, led the design of the gearbox and primary mechanism, ran SolidWorks simulation, and hand-built the device from wood."
+          ]
+        },
+        {
+          "heading": "Limitations and lessons",
+          "body": [
+            "This was a class prototype, not a commercial product, and I would not call it a practical irrigation solution. What I took from it was the full cycle: planning a team build, designing a mechanism, and seeing where an idea breaks down once it is made by hand."
+          ]
+        }
+      ]
+    }
+  ]
+}

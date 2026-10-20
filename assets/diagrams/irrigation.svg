@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" aria-hidden="true" focusable="false">
+              
+              
+              <g fill="none" stroke="#111A21" stroke-width="1.5">
+                <rect x="14" y="80" width="120" height="60"/><rect x="180" y="80" width="120" height="60"/><rect x="346" y="80" width="120" height="60"/>
+                <path d="M134 110 h46 M300 110 h46"/>
+              </g>
+              <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#111A21" text-anchor="middle">
+                <text x="74" y="114">gravity</text><text x="240" y="106">gearbox /</text><text x="240" y="122">mechanism</text><text x="406" y="114">irrigation</text>
+              </g>
+            </svg>

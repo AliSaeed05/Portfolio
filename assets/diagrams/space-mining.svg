@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" aria-hidden="true" focusable="false">
+              
+              
+              <g fill="none" stroke="#111A21" stroke-width="1.5">
+                <rect x="40" y="170" width="260" height="90" />
+                <path d="M60 170 Q170 90 280 170" stroke="#1D4ED8" stroke-width="2.5" />
+                <path d="M70 215 h200" stroke-dasharray="5 4" />
+                <circle cx="170" cy="215" r="26" />
+                <path d="M300 215 h60" /><path d="M350 205 l10 10 l-10 10" />
+              </g>
+              <g font-family="ui-monospace, Menlo, Consolas, monospace" font-size="11" fill="#111A21">
+                <text x="150" y="132" fill="#1D4ED8">dust cover</text>
+                <text x="118" y="219">collection motion</text>
+                <text x="46" y="282">rover collection subsystem (generic)</text>
+                <text x="370" y="130" font-weight="700">Interfaces</text>
+                <text x="370" y="152">1 protection ↔ motion</text>
+                <text x="370" y="172">2 clearance</text>
+                <text x="370" y="192">3 attachment</text>
+                <text x="370" y="212">4 fabrication</text>
+              </g>
+            </svg>
