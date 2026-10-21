@@ -8,11 +8,11 @@
       "id": "space-mining",
       "title": "Lunar-regolith rover dust cover",
       "group": "featured",
-      "summary": "Leading1 the dust-cover design for a rover’s collection subsystem, with robustness and manufacturability as the goals.",
+      "summary": "The dust-cover design for a rover’s collection subsystem, with robustness and manufacturability as the goals.",
       "role": "Collections sub-team, Cardinal Space Mining; design lead for the dust cover",
-      "status": "In progress",
+      "status": "In progress; in design stage",
       "dates": "Current",
-      "tools": "Team design for NASA Lunabotics",
+      "tools": "SolidWorks CAD, ANSYS FEA, Milling, 3D printing",
       "diagram": "assets/diagrams/space-mining.svg",
       "diagram_label": "Illustrative diagram, not project hardware",
       "images": ["space-mining-main.jpg", "space-mining-1.jpg", "space-mining-1.jpg"],
@@ -58,8 +58,8 @@
       "title": "Custom built loft-shelf",
       "group": "featured",
       "summary": "A custom-built loft-shelf designed and hand-built for personal use.",
-      "role": "Project manager; led design and construction",
-      "status": "Ongoing",
+      "role": "Independent project",
+      "status": "Ongoing; in manufacturing stage",
       "dates": "October 2026 – present",
       "tools": "SolidWorks CAD, ANSYS FEA, hand fabrication in wood, 3D printing",
       "diagram": "assets/diagrams/irrigation.svg",
@@ -69,7 +69,18 @@
         {
           "heading": "Objective",
           "body": [
-            "Design, plan, and build a portable irrigation device powered by gravity."
+            "Design, plan, and build a custom loft-shelf for personal use."
+          ]
+        },
+        {
+          "heading": "Design Considerations",
+          "body": [
+            "The loft-shelf was designed to fit into my lofted bedframe and hold a variety of items. The design needed to be structurally sound, stable (no wobbling or shifting), while also being light-weight and easy to install or relocate if necessary.",
+            "Measurments of the bedframe were taken to fit the shelf brackets.",
+            "Wood was chosen as the material for the brackets as it is easy to manufacture, while being stiff and sturdy enough to bear the load of the shelf and its contents.",
+            "3D-printed PLA was chosen for the shelf itself as it is light-weight, reducing the total load on the brackets and bedframe. The 3D printing process also allowed for a more complex shape that would have been difficult to manufacture with wood.",
+            "The shelf was designed with a lip around the top surface to prevent items from sliding off, and sloted rails on the bottom surfaces to fit into the brackets without allowing for slipage or shifting. The shelf was also designed to be easily removable from the brackets if necessary.",
+            "An FEA Analysis was used to evaluate the structural integrity of the shelf and brackets, and to ensure that the design would be able to withstand the expected loads."
           ]
         },
         {
@@ -85,7 +96,7 @@
       "title": "RL-Trained Robotic Hand",
       "group": "featured",
       "summary": "Trained a reinforcement learning model policy to control a robotic hand in Isaac Sim.",
-      "role": "Project Manager",
+      "role": "Independent project",
       "status": "Past project",
       "dates": "May – July 2026",
       "tools": "Python, Isaac Sim, modern reinforcement learning",
@@ -96,7 +107,25 @@
         {
           "heading": "Objective",
           "body": [
-            "Train a reinforcement learning model to control a robotic hand."
+            "Train a reinforcement learning model to control a robotic hand. Reference videos and object/hand trajectory data were collected from the HO-Cap (NeurIPS 2025) dataset. The dataset provided data on 21 key points on the robot and human hands, object position and rotation, object linear and angular velocity.",
+            "The policy was given the following observations:",
+            "- The Robot's hand key points relative to the object",
+            "- The Reference hand's key points relative to the object",
+            "- The difference between the robot key points and the reference key points",
+            "- The next-frame reference points relative to the object",
+            "- Current joint positions",
+            "- Contact forces acting on each fingertip",
+            "Tensorboard was also used to visualize the training process, including the reward function and the policy's performance over time."
+          ]
+        },
+        {
+          "heading": "Reward function",
+          "body": [
+            "Some information on the reward function used to train the policy:",
+            "- During initial training attempts, the agent seemed to have a difficult time learning to grip and pick up the object, even though it seemed to be following the reference path well. For this reason, a strong reward incentive was given for forming a strong, firm, and stable grip on the object.",
+            "- Select points on the robots hand determined to be important for a firm grip (all 5 finger tips, palm, and base of the index and middle fingers) are tracked relative to their distance to the object. In the calculation for r_grasp, each of these points are weighted according to their important in forming a strong grip around the object.",
+            "- The object's position and rotation are tracked relative to the reference object. The agent is rewarded for keeping the object’s pose as similar to the reference object as possible.",
+            "- The amount and speed of movement of the robot’s hand is calculated and penalized. This discourages the agent from making too many unnecessary movements, and encourages a smooth and deliberate trajectory."
           ]
         },
         {
@@ -113,7 +142,7 @@
       "group": "featured",
       "summary": "Proposed airbrake flight-mechanics system for a model rocket.",
       "role": "Mechanical sub-team, Cyclone Rocketry; proposed airbrake design",
-      "status": "Past project",
+      "status": "Completed",
       "dates": "Oct 2024 – Dec 2025",
       "tools": "SolidWorks, Ansys (FEA)",
       "diagram": "assets/diagrams/airbrakes.svg",
@@ -127,15 +156,19 @@
           ]
         },
         {
-          "heading": "Why it matters",
+          "heading": "Design Considerations",
           "body": [
-            "> The airbrakes add drag on demand to help a rocket reach a target apogee. The system needed to be lighter and more compact than previous designs, while still being robust enough to withstand the forces without compromising control authority."
+            "The airbrakes add drag on demand to help a rocket reach a target apogee.",
+            "Previous year's designs, although robust, had a large footprint within the rocket body, and were too heavy. The airbrakes needed to be designed to fit within a smaller profile, while still being able to withstand the forces acting on them during flight.",
+            "The spiral cam design would allow for a more compact design without sacrificing control authority",
+            "As the fins deployed, the exponentially increasing drag would increase friction on the mechanism, so the design needed to be adjusted to have the fins riding on linear rails",
+            "The layout of the motors and how the mechanism fits into the rocket body had to be reconsidered, as the new design was very different from the previous year's."
           ]
         },
         {
           "heading": "My contribution",
           "body": [
-            "I proposed a novel airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
+            "I proposed a airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
           ]
         }
       ]
@@ -146,7 +179,7 @@
       "group": "supporting",
       "summary": "A Substrate rubbing machine designed and built custom for the FMOD Research Lab.",
       "role": "Project Manager, led design, construction, and testing",
-      "status": "Past project",
+      "status": "Completed; deployed to lab",
       "dates": "May - August 2024",
       "tools": "Onshape, Arduino, hand fabrication, 3D printing",
       "diagram": "assets/diagrams/home-server.svg",
@@ -157,6 +190,20 @@
           "heading": "Objective",
           "body": [
             "Design, build, test, and deploy a substrate rubbing machine customized for the FMOD Research Lab's needs."
+          ]
+        },
+        {
+          "heading": "Design Considerations",
+          "body": [
+            "In crystals research, substrate rubbing is used to induce anisotropy or align molecules. Usually this process is done by hand, which can be time consuming and inconsistent.",
+            "The FMOD research lab at LUMS needed a machine to automate the process of rubbing substrates. The machine needed to be able to accommodate different substrate sizes, and be able to apply a consistent amount of pressure and speed as a roller was pressed along the substrate. The machine also needed to be easy to operate, and be able to be cleaned and maintained easily.",
+            "The control buttons were designed to incorperate as much funtionality as possible, while still being simple to use. The automated rubbing routine would:",
+            "- move the roller down to the correct height",
+            "- move the substrate bed at a constant velocity under the roller",
+            "- when the limit switch at the end of the substrate bed is triggered, the roller is lifted",
+            "- the substrate bed is returned to the starting position",
+            "The controls also allow for manual positioning of the roller and substrate bed, and isolated control of the roller spin.",
+            "These control options were all designed considering the needs of the lab, and the need for a simple and easy to use interface."           
           ]
         },
         {
@@ -172,8 +219,8 @@
       "title": "Private home mediaserver",
       "group": "supporting",
       "summary": "A Debian server I built and maintain for media, files, photos, and other services I can provide to friends and family.",
-      "role": "Built and maintain the server",
-      "status": "Ongoing",
+      "role": "Independent project",
+      "status": "Ongoing; actively being upgraded",
       "dates": "June 2026 - present",
       "tools": "Debian, Nextcloud, Jellyfin, Immich, Traefik, Pangolin",
       "diagram": "assets/diagrams/home-server.svg",
