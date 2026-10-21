@@ -15,7 +15,7 @@
       "tools": "SolidWorks CAD, ANSYS FEA, Milling, 3D printing",
       "diagram": "assets/diagrams/space-mining.svg",
       "diagram_label": "Illustrative diagram, not project hardware",
-      "images": ["space-mining-main.jpg", "space-mining-1.jpg", "space-mining-1.jpg"],
+      "images": ["space-mining-main.jpg", "space-mining-1.jpg"],
       "sections": [
         {
           "heading": "Objective",
