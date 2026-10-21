@@ -1,6 +1,6 @@
 {
   "site": {
-    "hero_alt": "Ali Saeed Chaudhary working on a project",
+    "hero_alt": "Hero Picture",
     "about_alt": "Ali Saeed Chaudhary"
   },
   "projects": [
@@ -8,7 +8,7 @@
       "id": "space-mining",
       "title": "Lunar-regolith rover dust cover",
       "group": "featured",
-      "summary": "Leading the dust-cover design for a rover’s collection subsystem, with robustness and manufacturability as the goals.",
+      "summary": "Leading1 the dust-cover design for a rover’s collection subsystem, with robustness and manufacturability as the goals.",
       "role": "Collections sub-team, Cardinal Space Mining; design lead for the dust cover",
       "status": "In progress",
       "dates": "Current",
@@ -56,7 +56,7 @@
     {
       "id": "shelf",
       "title": "Custom built loft-shelf",
-      "group": "supporting",
+      "group": "featured",
       "summary": "A custom-built loft-shelf designed and hand-built for personal use.",
       "role": "Project manager; led design and construction",
       "status": "Ongoing",
@@ -75,13 +75,7 @@
         {
           "heading": "My contribution",
           "body": [
-            "I managed the project and allocated roles, led the design of the gearbox and primary mechanism, ran SolidWorks simulation, and hand-built the device from wood."
-          ]
-        },
-        {
-          "heading": "Limitations and lessons",
-          "body": [
-            "This was a class prototype, not a commercial product, and I would not call it a practical irrigation solution. What I took from it was the full cycle: planning a team build, designing a mechanism, and seeing where an idea breaks down once it is made by hand."
+            "This is a Solo Project. I measured the frame the shelf would be fitted to, and designed the shelf in SolidWorks. I also performed finite element analysis (FEA) in ANSYS to ensure the design would be structurally sound, and built the shelf by hand."
           ]
         }
       ]
@@ -89,7 +83,7 @@
     {
       "id": "hand",
       "title": "RL-Trained Robotic Hand",
-      "group": "supporting",
+      "group": "featured",
       "summary": "Trained a reinforcement learning model policy to control a robotic hand in Isaac Sim.",
       "role": "Project Manager",
       "status": "Past project",
@@ -102,19 +96,13 @@
         {
           "heading": "Objective",
           "body": [
-            "Design, plan, and build a portable irrigation device powered by gravity."
+            "Train a reinforcement learning model to control a robotic hand."
           ]
         },
         {
           "heading": "My contribution",
           "body": [
-            "I managed the project and allocated roles, led the design of the gearbox and primary mechanism, ran SolidWorks simulation, and hand-built the device from wood."
-          ]
-        },
-        {
-          "heading": "Limitations and lessons",
-          "body": [
-            "This was a class prototype, not a commercial product, and I would not call it a practical irrigation solution. What I took from it was the full cycle: planning a team build, designing a mechanism, and seeing where an idea breaks down once it is made by hand."
+            "This was a Solo Project. I trained the policy using reinforcement learning, and designed the reward function and action space."
           ]
         }
       ]
@@ -148,6 +136,33 @@
           "heading": "My contribution",
           "body": [
             "I proposed a novel airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rubbing-machine",
+      "title": "Substrate rubbing machine",
+      "group": "supporting",
+      "summary": "A Substrate rubbing machine designed and built custom for the FMOD Research Lab.",
+      "role": "Project Manager, led design, construction, and testing",
+      "status": "Past project",
+      "dates": "May - August 2024",
+      "tools": "Onshape, Arduino, hand fabrication, 3D printing",
+      "diagram": "assets/diagrams/home-server.svg",
+      "diagram_label": "Illustrative diagram, simplified",
+      "images": ["rubbing.png", "documentation.png", "pcb.png", "wiring.png"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Design, build, test, and deploy a substrate rubbing machine customized for the FMOD Research Lab's needs."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I led the design, construction, and testing of the substrate rubbing machine. With the assistance of the PhysLab team, I outlined the requirements and specifications of the machine, and then designed the machine in Onshape. I also designed a custom PCB for the button panel, 3D printed the control surfaces, and tested the machine before it was deployed to the lab."
           ]
         }
       ]
