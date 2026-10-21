@@ -1,1 +1,8 @@
+# Private notes, never publish
 Personal_README.md
+
+# Editor and system junk
+.DS_Store
+Thumbs.db
+.vscode/
+__pycache__/
