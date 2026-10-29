@@ -76,10 +76,10 @@
           "heading": "Design Considerations",
           "body": [
             "The loft-shelf was designed to fit into my lofted bedframe and hold a variety of items. The design needed to be structurally sound, stable (no wobbling or shifting), while also being light-weight and easy to install or relocate if necessary.",
-            "Measurments of the bedframe were taken to fit the shelf brackets.",
+            "Measurements of the bedframe were taken to fit the shelf brackets.",
             "Wood was chosen as the material for the brackets as it is easy to manufacture, while being stiff and sturdy enough to bear the load of the shelf and its contents.",
             "3D-printed PLA was chosen for the shelf itself as it is light-weight, reducing the total load on the brackets and bedframe. The 3D printing process also allowed for a more complex shape that would have been difficult to manufacture with wood.",
-            "The shelf was designed with a lip around the top surface to prevent items from sliding off, and sloted rails on the bottom surfaces to fit into the brackets without allowing for slipage or shifting. The shelf was also designed to be easily removable from the brackets if necessary.",
+            "The shelf was designed with a lip around the top surface to prevent items from sliding off, and slotted rails on the bottom surfaces to fit into the brackets without allowing for slippage or shifting. The shelf was also designed to be easily removable from the brackets if necessary.",
             "An FEA Analysis was used to evaluate the structural integrity of the shelf and brackets, and to ensure that the design would be able to withstand the expected loads."
           ]
         },
@@ -123,7 +123,7 @@
           "body": [
             "Some information on the reward function used to train the policy:",
             "- During initial training attempts, the agent seemed to have a difficult time learning to grip and pick up the object, even though it seemed to be following the reference path well. For this reason, a strong reward incentive was given for forming a strong, firm, and stable grip on the object.",
-            "- Select points on the robots hand determined to be important for a firm grip (all 5 finger tips, palm, and base of the index and middle fingers) are tracked relative to their distance to the object. In the calculation for r_grasp, each of these points are weighted according to their important in forming a strong grip around the object.",
+            "- Select points on the robot's hand determined to be important for a firm grip (all 5 finger tips, palm, and base of the index and middle fingers) are tracked relative to their distance to the object. In the calculation for r_grasp, each of these points are weighted according to their important in forming a strong grip around the object.",
             "- The object's position and rotation are tracked relative to the reference object. The agent is rewarded for keeping the object’s pose as similar to the reference object as possible.",
             "- The amount and speed of movement of the robot’s hand is calculated and penalized. This discourages the agent from making too many unnecessary movements, and encourages a smooth and deliberate trajectory."
           ]
@@ -168,7 +168,7 @@
         {
           "heading": "My contribution",
           "body": [
-            "I proposed a airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
+            "I proposed an airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
           ]
         }
       ]
@@ -197,7 +197,7 @@
           "body": [
             "In crystals research, substrate rubbing is used to induce anisotropy or align molecules. Usually this process is done by hand, which can be time consuming and inconsistent.",
             "The FMOD research lab at LUMS needed a machine to automate the process of rubbing substrates. The machine needed to be able to accommodate different substrate sizes, and be able to apply a consistent amount of pressure and speed as a roller was pressed along the substrate. The machine also needed to be easy to operate, and be able to be cleaned and maintained easily.",
-            "The control buttons were designed to incorperate as much funtionality as possible, while still being simple to use. The automated rubbing routine would:",
+            "The control buttons were designed to incorporate as much functionality as possible, while still being simple to use. The automated rubbing routine would:",
             "- move the roller down to the correct height",
             "- move the substrate bed at a constant velocity under the roller",
             "- when the limit switch at the end of the substrate bed is triggered, the roller is lifted",
@@ -236,7 +236,7 @@
         {
           "heading": "My contribution",
           "body": [
-            "I built and maintain the server, deploy the services (Nextcloud, Jellyfin, Immich), and troubleshoot problems as they come up."
+            "I built and maintained the server, deployed the services (Nextcloud, Jellyfin, Immich), and troubleshoot problems as they come up."
           ]
         },
         {
