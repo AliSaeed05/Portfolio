@@ -9,8 +9,8 @@
       "id": "rubbing-machine",
       "title": "Substrate rubbing machine",
       "group": "featured",
-      "summary": "A Substrate rubbing machine designed and built custom for the FMOD Research Lab.",
-      "role": "Project Manager, led design, construction, and testing",
+      "summary": "Designed, built, tested, and deployed an automated substrate rubbing machine for the FMOD Research Lab at LUMS.",
+      "role": "Project Manager, Lab Engineering Intern",
       "status": "Completed; deployed to lab",
       "dates": "May - August 2024",
       "tools": "Onshape, Arduino, hand fabrication, 3D printing",
@@ -35,13 +35,14 @@
             "- when the limit switch at the end of the substrate bed is triggered, the roller is lifted",
             "- the substrate bed is returned to the starting position",
             "The controls also allow for manual positioning of the roller and substrate bed, and isolated control of the roller spin.",
-            "These control options were all designed considering the needs of the lab, and the need for a simple and easy to use interface."           
+            "These control options were all designed considering the needs of the lab, and the need for a simple and easy to use interface."
           ]
         },
         {
           "heading": "My contribution",
           "body": [
-            "I led the design, construction, and testing of the substrate rubbing machine. With the assistance of the PhysLab team, I outlined the requirements and specifications of the machine, and then designed the machine in Onshape. I also designed a custom PCB for the button panel, 3D printed the control surfaces, and tested the machine before it was deployed to the lab."
+            "I led design, construction, and testing, defining requirements with input from the PhysLab team. I designed the mechanical assembly in Onshape and integrated an aluminum frame with an Arduino Mega/RAMPS 1.4 control system driving three NEMA 17 stepper motors.",
+            "I also developed the control-panel PCB, 3D-printed the controls, and implemented the automated rubbing routine and manual adjustments."
           ]
         }
       ]
@@ -111,7 +112,7 @@
         {
           "heading": "Objective",
           "body": [
-            "Design, plan, and build a custom loft-shelf for personal use."
+            "Build a stable, lightweight shelf that fits my lofted bedframe and can be installed or removed easily."
           ]
         },
         {
@@ -128,7 +129,7 @@
         {
           "heading": "My contribution",
           "body": [
-            "This is a Solo Project. I measured the frame the shelf would be fitted to, and designed the shelf in SolidWorks. I also performed finite element analysis (FEA) in ANSYS to ensure the design would be structurally sound, and built the shelf by hand."
+            "This is a Solo Project. I measured the frame the shelf would be fitted to, and designed the shelf in SolidWorks. I also performed finite element analysis (FEA) in ANSYS to ensure the design would be structurally sound, and am fabricating the shelf using wood and 3D-printing."
           ]
         }
       ]
