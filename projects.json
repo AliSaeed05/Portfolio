@@ -4,6 +4,48 @@
     "about_alt": "Ali Saeed Chaudhary"
   },
   "projects": [
+    
+    {
+      "id": "rubbing-machine",
+      "title": "Substrate rubbing machine",
+      "group": "featured",
+      "summary": "A Substrate rubbing machine designed and built custom for the FMOD Research Lab.",
+      "role": "Project Manager, led design, construction, and testing",
+      "status": "Completed; deployed to lab",
+      "dates": "May - August 2024",
+      "tools": "Onshape, Arduino, hand fabrication, 3D printing",
+      "diagram": "assets/diagrams/home-server.svg",
+      "diagram_label": "Illustrative diagram, simplified",
+      "images": ["rubbing.png", "documentation.png", "pcb.png", "wiring.png"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Design, build, test, and deploy a substrate rubbing machine customized for the FMOD Research Lab's needs."
+          ]
+        },
+        {
+          "heading": "Design Considerations",
+          "body": [
+            "In crystals research, substrate rubbing is used to induce anisotropy or align molecules. Usually this process is done by hand, which can be time consuming and inconsistent.",
+            "The FMOD research lab at LUMS needed a machine to automate the process of rubbing substrates. The machine needed to be able to accommodate different substrate sizes, and be able to apply a consistent amount of pressure and speed as a roller was pressed along the substrate. The machine also needed to be easy to operate, and be able to be cleaned and maintained easily.",
+            "The control buttons were designed to incorporate as much functionality as possible, while still being simple to use. The automated rubbing routine would:",
+            "- move the roller down to the correct height",
+            "- move the substrate bed at a constant velocity under the roller",
+            "- when the limit switch at the end of the substrate bed is triggered, the roller is lifted",
+            "- the substrate bed is returned to the starting position",
+            "The controls also allow for manual positioning of the roller and substrate bed, and isolated control of the roller spin.",
+            "These control options were all designed considering the needs of the lab, and the need for a simple and easy to use interface."           
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I led the design, construction, and testing of the substrate rubbing machine. With the assistance of the PhysLab team, I outlined the requirements and specifications of the machine, and then designed the machine in Onshape. I also designed a custom PCB for the button panel, 3D printed the control surfaces, and tested the machine before it was deployed to the lab."
+          ]
+        }
+      ]
+    },
     {
       "id": "space-mining",
       "title": "Lunar-regolith rover dust cover",
@@ -169,47 +211,6 @@
           "heading": "My contribution",
           "body": [
             "I proposed an airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "rubbing-machine",
-      "title": "Substrate rubbing machine",
-      "group": "supporting",
-      "summary": "A Substrate rubbing machine designed and built custom for the FMOD Research Lab.",
-      "role": "Project Manager, led design, construction, and testing",
-      "status": "Completed; deployed to lab",
-      "dates": "May - August 2024",
-      "tools": "Onshape, Arduino, hand fabrication, 3D printing",
-      "diagram": "assets/diagrams/home-server.svg",
-      "diagram_label": "Illustrative diagram, simplified",
-      "images": ["rubbing.png", "documentation.png", "pcb.png", "wiring.png"],
-      "sections": [
-        {
-          "heading": "Objective",
-          "body": [
-            "Design, build, test, and deploy a substrate rubbing machine customized for the FMOD Research Lab's needs."
-          ]
-        },
-        {
-          "heading": "Design Considerations",
-          "body": [
-            "In crystals research, substrate rubbing is used to induce anisotropy or align molecules. Usually this process is done by hand, which can be time consuming and inconsistent.",
-            "The FMOD research lab at LUMS needed a machine to automate the process of rubbing substrates. The machine needed to be able to accommodate different substrate sizes, and be able to apply a consistent amount of pressure and speed as a roller was pressed along the substrate. The machine also needed to be easy to operate, and be able to be cleaned and maintained easily.",
-            "The control buttons were designed to incorporate as much functionality as possible, while still being simple to use. The automated rubbing routine would:",
-            "- move the roller down to the correct height",
-            "- move the substrate bed at a constant velocity under the roller",
-            "- when the limit switch at the end of the substrate bed is triggered, the roller is lifted",
-            "- the substrate bed is returned to the starting position",
-            "The controls also allow for manual positioning of the roller and substrate bed, and isolated control of the roller spin.",
-            "These control options were all designed considering the needs of the lab, and the need for a simple and easy to use interface."           
-          ]
-        },
-        {
-          "heading": "My contribution",
-          "body": [
-            "I led the design, construction, and testing of the substrate rubbing machine. With the assistance of the PhysLab team, I outlined the requirements and specifications of the machine, and then designed the machine in Onshape. I also designed a custom PCB for the button panel, 3D printed the control surfaces, and tested the machine before it was deployed to the lab."
           ]
         }
       ]
