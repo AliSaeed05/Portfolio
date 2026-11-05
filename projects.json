@@ -48,6 +48,56 @@
       ]
     },
     {
+      "id": "trajectory-prediction",
+      "title": "Calibrated Forecasting of Aircraft Trajectories at Scale",
+      "group": "featured",
+      "summary": "Developing a physics-informed aircraft trajectory forecasting pipeline to support uncertainty-aware prediction, in collaboration with RTX Collins Aerospace.",
+      "role": "Undergraduate Research Assistant, Coordinated Systems Lab",
+      "status": "Ongoing; physics-based baseline developed",
+      "dates": "August 2026 – present",
+      "tools": "Python, pyBADA, NASA Sherlock flight data, FAA CIFP procedure data",
+      "diagram": "assets/diagrams/trajectory-prediction.svg",
+      "diagram_label": "Illustrative forecasting concept",
+      "images": [
+        {"file" : "flighttube.png", "caption" : "A flight tube showing the nominal route, observed flown path, and the future trajectory uncertainty envelope tube."}
+        ,"onesecond.png", "altitude.png", "arrival.png"
+      ],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Predict how an aircraft will depart from its filed flight plan and quantify uncertainty in its future position. The project combines an aircraft-performance baseline with planned machine-learning corrections, supporting the lab’s broader goal of calibrated, multi-aircraft forecasting."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "I develop the Python workflow connecting filed routes, aircraft-performance modeling, and observed flight tracks. My work includes investigating NASA Sherlock data, preparing trajectory comparisons, and developing the nominal forecast that will serve as the reference for learning flight-path deviations."
+          ]
+        },
+        {
+          "heading": "Modeling approach",
+          "body": [
+            "The current baseline combines filed waypoints and published departure and arrival procedures with pyBADA aircraft-performance calculations. It advances the aircraft state at one-second intervals using lateral guidance, speed schedules, and climb, cruise, and descent logic.",
+            "A bisection search identifies the latest top of descent that satisfies the modeled altitude and speed constraints. This establishes a physics-based reference before adding learned corrections. The current flight’s observed track is kept out of the forecast inputs and used for comparison."
+          ]
+        },
+        {
+          "heading": "Current results",
+          "body": [
+            "The initial single-flight demonstration produced a nominal trajectory and passed all nine reported fix checks within the specified tolerances of 100 ft and 1 kt. The descent search converged in 13 trial descents; two constraint checks had narrow remaining margins.",
+            "Comparing the nominal profile with the recorded flight revealed differences in routing and cruise altitude. This is a baseline demonstration, not a validated prediction-accuracy result: it uses no wind, standard-atmosphere assumptions, and BADA demonstration coefficients, and ends at the last arrival fix before the runway branch."
+          ]
+        },
+        {
+          "heading": "Next steps",
+          "body": [
+            "I am extending the workflow toward forecast-wind inputs and multi-flight residual datasets. The next modeling stage will learn probabilistic corrections to the nominal trajectory and evaluate whether predicted uncertainty matches observed errors. Multi-aircraft interactions and rolling forecasts are deferred extensions."
+          ]
+        }
+      ]
+    },
+    {
       "id": "space-mining",
       "title": "Lunar-regolith rover dust cover",
       "group": "featured",
@@ -58,7 +108,7 @@
       "tools": "SolidWorks CAD, ANSYS FEA, Milling, 3D printing",
       "diagram": "assets/diagrams/space-mining.svg",
       "diagram_label": "Illustrative diagram, not project hardware",
-      "images": ["space-mining-main.jpg", "space-mining-1.jpg"],
+      "images": ["space-mining-main.jpg", {"file": "dustcover.png", "caption": "New preliminary dust cover design for the lunar rover collection subsystem."}],
       "sections": [
         {
           "heading": "Objective",
@@ -92,44 +142,6 @@
           "heading": "Current stage",
           "body": [
             "Design work is ongoing. A final design, prototype, and dust-protection test results do not exist yet."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "shelf",
-      "title": "Custom built loft-shelf",
-      "group": "featured",
-      "summary": "A custom-built loft-shelf designed and hand-built for personal use.",
-      "role": "Independent project",
-      "status": "Ongoing; in manufacturing stage",
-      "dates": "October 2026 – present",
-      "tools": "SolidWorks CAD, ANSYS FEA, hand fabrication in wood, 3D printing",
-      "diagram": "assets/diagrams/irrigation.svg",
-      "diagram_label": "Illustrative diagram, not the built device",
-      "images": ["shelf-ss.png", "shelf-file.png", "shelf-file2.png", "vid.mp4"],
-      "sections": [
-        {
-          "heading": "Objective",
-          "body": [
-            "Build a stable, lightweight shelf that fits my lofted bedframe and can be installed or removed easily."
-          ]
-        },
-        {
-          "heading": "Design Considerations",
-          "body": [
-            "The loft-shelf was designed to fit into my lofted bedframe and hold a variety of items. The design needed to be structurally sound, stable (no wobbling or shifting), while also being light-weight and easy to install or relocate if necessary.",
-            "Measurements of the bedframe were taken to fit the shelf brackets.",
-            "Wood was chosen as the material for the brackets as it is easy to manufacture, while being stiff and sturdy enough to bear the load of the shelf and its contents.",
-            "3D-printed PLA was chosen for the shelf itself as it is light-weight, reducing the total load on the brackets and bedframe. The 3D printing process also allowed for a more complex shape that would have been difficult to manufacture with wood.",
-            "The shelf was designed with a lip around the top surface to prevent items from sliding off, and slotted rails on the bottom surfaces to fit into the brackets without allowing for slippage or shifting. The shelf was also designed to be easily removable from the brackets if necessary.",
-            "An FEA Analysis was used to evaluate the structural integrity of the shelf and brackets, and to ensure that the design would be able to withstand the expected loads."
-          ]
-        },
-        {
-          "heading": "My contribution",
-          "body": [
-            "This is a Solo Project. I measured the frame the shelf would be fitted to, and designed the shelf in SolidWorks. I also performed finite element analysis (FEA) in ANSYS to ensure the design would be structurally sound, and am fabricating the shelf using wood and 3D-printing."
           ]
         }
       ]
@@ -212,6 +224,45 @@
           "heading": "My contribution",
           "body": [
             "I proposed an airbrake concept using a spiral cam, allowing the mechanism to fit into a much smaller profile. I conducted finite element analysis (FEA) simulations in Ansys, and modeled the components in SolidWorks."
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": "shelf",
+      "title": "Custom built loft-shelf",
+      "group": "featured",
+      "summary": "A custom-built loft-shelf designed and hand-built for personal use.",
+      "role": "Independent project",
+      "status": "Ongoing; in manufacturing stage",
+      "dates": "October 2026 – present",
+      "tools": "SolidWorks CAD, ANSYS FEA, hand fabrication in wood, 3D printing",
+      "diagram": "assets/diagrams/irrigation.svg",
+      "diagram_label": "Illustrative diagram, not the built device",
+      "images": ["shelf-ss.png", "shelf-file.png", "shelf-file2.png", "vid.mp4"],
+      "sections": [
+        {
+          "heading": "Objective",
+          "body": [
+            "Build a stable, lightweight shelf that fits my lofted bedframe and can be installed or removed easily."
+          ]
+        },
+        {
+          "heading": "Design Considerations",
+          "body": [
+            "The loft-shelf was designed to fit into my lofted bedframe and hold a variety of items. The design needed to be structurally sound, stable (no wobbling or shifting), while also being light-weight and easy to install or relocate if necessary.",
+            "Measurements of the bedframe were taken to fit the shelf brackets.",
+            "Wood was chosen as the material for the brackets as it is easy to manufacture, while being stiff and sturdy enough to bear the load of the shelf and its contents.",
+            "3D-printed PLA was chosen for the shelf itself as it is light-weight, reducing the total load on the brackets and bedframe. The 3D printing process also allowed for a more complex shape that would have been difficult to manufacture with wood.",
+            "The shelf was designed with a lip around the top surface to prevent items from sliding off, and slotted rails on the bottom surfaces to fit into the brackets without allowing for slippage or shifting. The shelf was also designed to be easily removable from the brackets if necessary.",
+            "An FEA Analysis was used to evaluate the structural integrity of the shelf and brackets, and to ensure that the design would be able to withstand the expected loads."
+          ]
+        },
+        {
+          "heading": "My contribution",
+          "body": [
+            "This is a Solo Project. I measured the frame the shelf would be fitted to, and designed the shelf in SolidWorks. I also performed finite element analysis (FEA) in ANSYS to ensure the design would be structurally sound, and am fabricating the shelf using wood and 3D-printing."
           ]
         }
       ]
