@@ -16,7 +16,12 @@
       "tools": "Onshape, Arduino, hand fabrication, 3D printing",
       "diagram": "assets/diagrams/home-server.svg",
       "diagram_label": "Illustrative diagram, simplified",
-      "images": ["rubbing.png", "documentation.png", "pcb.png", "wiring.png"],
+      "images": [
+        {"file": "rubbing.png", "caption": "The substrate rubbing machine in the FMOD Research Lab at LUMS."},
+        {"file": "documentation.png", "caption": "A page from the documentation of the machine's design and operation."},
+        {"file": "pcb.png", "caption": "The custom control-panel PCB designed for the machine."},
+        {"file": "wiring.png", "caption": "Inside of the wiring box and control panel."}
+      ],
       "sections": [
         {
           "heading": "Objective",
@@ -47,6 +52,8 @@
         }
       ]
     },
+
+
     {
       "id": "trajectory-prediction",
       "title": "Calibrated Forecasting of Aircraft Trajectories at Scale",
@@ -97,18 +104,24 @@
         }
       ]
     },
+
+
     {
       "id": "space-mining",
-      "title": "Lunar-regolith rover dust cover",
+      "title": "Lunar-regolith rover dust chute",
       "group": "featured",
-      "summary": "The dust-cover design for a rover’s collection subsystem, with robustness and manufacturability as the goals.",
-      "role": "Collections sub-team, Cardinal Space Mining; design lead for the dust cover",
+      "summary": "The dust-cover chute for a rover’s collection subsystem, with robustness and manufacturability as the goals.",
+      "role": "Collections sub-team, Cardinal Space Mining; design lead for the dust chute",
       "status": "In progress; in design stage",
       "dates": "Current",
       "tools": "SolidWorks CAD, ANSYS FEA, Milling, 3D printing",
       "diagram": "assets/diagrams/space-mining.svg",
       "diagram_label": "Illustrative diagram, not project hardware",
-      "images": ["space-mining-main.jpg", {"file": "dustcover.png", "caption": "New preliminary dust cover design for the lunar rover collection subsystem."}],
+      "images": [
+        {"file": "space-mining-main.jpg", "caption": "CAD Rendering of the previous year's robot; design starting point"},
+        {"file": "dustcover.png", "caption": "New preliminary dust chute for the lunar rover collection subsystem."},
+        {"file": "tradestudy.png", "caption": "Trade study slide from the preliminary design review showing the considered dust chute designs."}
+      ],
       "sections": [
         {
           "heading": "Objective",
@@ -146,6 +159,8 @@
         }
       ]
     },
+
+
     {
       "id": "hand",
       "title": "RL-Trained Robotic Hand",
@@ -191,6 +206,8 @@
         }
       ]
     },
+
+
     {
       "id": "airbrakes",
       "title": "Model rocket airbrake system",
@@ -229,6 +246,7 @@
       ]
     },
     
+
     {
       "id": "shelf",
       "title": "Custom built loft-shelf",
@@ -267,6 +285,8 @@
         }
       ]
     },
+
+
     {
       "id": "home-server",
       "title": "Private home mediaserver",
