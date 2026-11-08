@@ -151,7 +151,7 @@
             "- It needs to be compatible with the rest of the robot, attatching properly to the frame and giving ample room for the LiDAR sensor.",
             "- Weight should be reduced as much as possible",
             "",
-            "Folliwng these constraints, we landed on a curved-top polycarbonate chute with rigid side walls. The polycarbonate will be far more resistant to damage from impacts without reducing it's effectiveness as a dust cover or causing the system to go it's over weight limits. The design will allow for non-lethal failure in the event of extreme forces. Support frames will also be added to add rigidity."
+            "Following these constraints, we landed on a curved-top polycarbonate chute with rigid side walls. The polycarbonate will be far more resistant to damage from impacts without reducing it's effectiveness as a dust cover or causing the system to go it's over weight limits. The design will allow for non-lethal failure in the event of extreme forces. Support frames will also be added to add rigidity."
           ]
         },
         {
